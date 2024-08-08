@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game V2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .controls {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      #control {
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>Snake Game</h1>
+    <h6>You can use keyboard or button to play this game.</h6>
+    <div id="container">
+      <h6 class="score"></h6>
+      <canvas id="canvas" width="400" height="400"></canvas>
+      <div class="controls">
+        <button data-key="ArrowUp" id="control">UP</button>
+        <button data-key="ArrowRight" id="control">RIGHT</button>
+        <button data-key="ArrowLeft" id="control">LEFT</button>
+        <button data-key="ArrowDown" id="control">DOWN</button>
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
